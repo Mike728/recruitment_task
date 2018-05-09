@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<form th:action="@{/process}" th:object="${input}" method="post">
+    <div class="col-md-5" style="margin-top: 20px">
+        <div class="form-group">
+            <label>Kod waluty:</label>
+            <input type="text" placeholder="Wpisz kod waluty" th:field="*{currency_name}"/>
+        </div>
+
+        <div class="form-group">
+            <label>Od:</label>
+            <input type="date" name="bday" th:field="*{from}"/>
+        </div>
+
+        <div class="form-group">
+            <label>Do:</label>
+            <input type="date" name="bday" th:field="*{to}"/>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary bg-info">Wyślij</button>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>

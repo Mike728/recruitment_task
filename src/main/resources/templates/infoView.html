@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<div class="col-md-5" style="margin-top: 20px">
+
+    <div class="form-group">
+        <label>Średni kurs kupna: </label>
+        <a th:text="${average}">1</a>
+    </div>
+
+    <div class="form-group">
+        <label>Odchylenie standardowe kursów sprzedaży: </label>
+        <a th:text="${std_dev}">1</a>
+    </div>
+
+    <div class="form-group">
+        <a href="#" th:href="@{'/mainView'}" class="btn btn-primary bg-info">Spróbuj ponownie</a>
+    </div>
+</div>
+
+</body>
+</html>

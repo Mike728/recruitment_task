@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<div class="col-md-5" style="margin-top: 20px">
+    <p class="text-danger">Wystąpił błąd. Możliwe przyczyny: </p>
+    <p>1. Niepoprawny kod waluty.</p>
+    <p>2. Należy pamiętać, że bank nie publikuje kursów w soboty i niedziele.</p>
+
+    <a href="#" th:href="@{'/mainView'}" class="btn btn-light ">Spróbuj ponownie</a>
+</div>
+
+</body>
+</html>
